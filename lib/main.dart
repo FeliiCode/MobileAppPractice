@@ -7,10 +7,28 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  @override
+   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: Scaffold(body: Center(child: Text('Hello, World', style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold, color: Colors.teal),))),
+      home: Scaffold(
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text(
+                'Hello, World',
+                style: TextStyle(
+                  fontSize: 30,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.teal,
+                ),
+              ),
+              SizedBox(height: 10),
+              Text('Nama Kamu', style: TextStyle(fontSize: 18)),
+            ],
+          ),
+        ),
+      ),
     );
   }
 }
