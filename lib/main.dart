@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 10),
-              Text('Nama Kamu', style: TextStyle(fontSize: 18)),
+              Text('Felissa Vivain Margaretha', style: TextStyle(fontSize: 18)),
             ],
           ),
         ),
